@@ -23,12 +23,13 @@ ul li
 	list-style: none;
 	float: left;
 	font-size: 3em;
-	transition: .9s;
+	transition: all .9s;
 
 }
 
 .ul:hover li
-{
+{	
+
 	transform: rotateY(360deg);
 }
 
