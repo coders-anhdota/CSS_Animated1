@@ -1,0 +1,81 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	font-family: arial;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #282928
+}
+
+.cardBox
+{
+	perspective: 500px;
+	margin: 15px
+}
+
+.card
+{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	box-shadow: 0 30px 30px rgba(0,0,0, .5);
+	transform-style: preserve-3d;
+	transition: .9s ease;
+}
+.facebook
+{
+	background: #3b5998;
+}
+
+.twitter
+{
+	background: #00aced;
+}
+
+.google
+{
+	background: #dd4b39;
+}
+
+.card-front, .card-back
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	backface-visibility: hidden;
+}
+
+.card-front
+{
+	display: flex;
+	font-size: 40px;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-back
+{
+	display: flex;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+	opacity: 0
+}
+
+.cardBox:hover .card
+{
+	transform: rotateY(180deg);
+}
+
+.cardBox:hover .card-back
+{
+	transform: rotateY(180deg);
+	opacity: 1
+}
