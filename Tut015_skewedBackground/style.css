@@ -1,0 +1,48 @@
+body
+{
+	background: rgba(0,0,0, 0.8);
+	margin: 0;
+	padding: 0;
+}
+
+.skewed
+{
+	background: #edff57;
+	padding: 200px 0;
+	transform: skew(0deg, -10deg) translateY(-120px);
+}
+
+.container
+{
+	padding: 100px 150px;
+	transform: skew(0deg, 10deg);
+	font-family: arial
+}
+
+h1
+{
+	margin: 0;
+	padding: 20px 0;
+	font-size: 3em;
+}
+
+p
+{
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+	width: 80%
+}
+
+.sec2
+{
+	padding: 0 200px 150px;
+	color: #fff;
+	text-align: right;
+}
+
+.sec2 p
+{
+	width: 100%
+}
